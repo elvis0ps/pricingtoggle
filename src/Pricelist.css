@@ -1,0 +1,190 @@
+.container{
+    max-width: 1440px;
+    box-sizing: border-box;
+    background-color:   hsl(240, 78%, 98%) ;
+    background-image: url(./bg-bottom.svg), url(./bg-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 100%, 100% 0%;
+    background-size: 25%, 25%;
+
+}
+.row{
+    text-align: center;
+    align-items: center; 
+    padding-left:  15%;
+    padding-top: 50px;
+    padding-bottom: 3rem;
+    margin-left: 3rem;
+} 
+li{
+    list-style: none;
+    border-bottom: 1px solid gray;
+    
+}
+#btn{
+    background-color: rgb(134, 134, 197);
+    width: 200px;
+    height: 50px;
+    border: none;
+
+}
+#a{
+    background-color: white;
+    border-radius: 5px;
+    width: 270px ;
+    height:370px ;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    padding-top: 80px;
+    font-size: 15px;
+}
+#b{
+    background-color: rgb(134, 134, 197);
+    border-radius:5px ;
+    width: 300px;
+    height: 400px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    padding-top: 93px;
+    font-size: 15px;
+    color: white;
+}
+
+
+#a ul li #num{
+    font-size: 60px;
+    margin-left: -20px;
+}
+
+ul li #num{
+    font-size: 60px;
+}
+
+#pro{
+    list-style: none;
+    border: none;
+    font-size: 30px;
+}
+
+.top{
+    text-align: center;
+    font-size: 20px;
+
+    padding-right: 50px;
+    margin-bottom: 30px; 
+} 
+
+.ann{
+    
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+.price{
+padding-right: 200px;
+font-family: 'Outfit', sans-serif;
+}
+#inner{
+    padding-right: 30px;
+}
+
+.top .bt{
+    background-color: rgb(134, 134, 197);
+    width: 30px;
+    height: 20px;
+    border-radius:30px ;
+    border:none;
+    margin:0px 10px;
+
+    
+}
+#b #btn1{
+    color:rgb(134, 134, 197);
+    background-color: white;
+    border-radius:5px;
+    width: 200px;
+    height: 50px;
+    border: none;
+}
+#b #btn1:hover {
+    background-color:rgb(150, 150, 207);
+    color: grey;
+    font-size: 22px;
+}
+#a #btn:hover {
+    background-color:whitesmoke;
+    color:rgb(134,134,197);
+    font-size: 22px;
+}
+
+/* Style for the toggle container */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  /* Style for the slider */
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(134, 134, 197);
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  /* Style for the slider when the checkbox is checked */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Style for the slider when the checkbox is checked */
+  input:checked + .slider {
+    background-color:rgb(134, 134, 197);
+  }
+  
+  /* Style for the slider when the checkbox is checked */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  @media (max-width:500px){
+    #b{
+        width: 270px ;
+        height:390px ;
+        margin:25px 0px;
+    }
+    .top{
+        margin-left:75px ;
+    }
+
+
+    .toggle {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin:0px 5px;
+      }
+      .toggle input {
+        width: 70px;
+      }
+      #b ul li #num{
+        font-size: 60px;
+        margin-left:-20px ;
+    }
+
+
+  }
